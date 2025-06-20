@@ -1,0 +1,130 @@
+theia@theia-petheshriraj:/home/project$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/project/.git/
+theia@theia-petheshriraj:/home/project$ git config --global --add safe.directory /home/project
+theia@theia-petheshriraj:/home/project$ git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+theia@theia-petheshriraj:/home/project$ git config --global user.email "you@example.com"
+
+^C
+theia@theia-petheshriraj:/home/project$ ^C
+theia@theia-petheshriraj:/home/project$ git config --globalgit config --global^C                                   
+theia@theia-petheshriraj:/home/project$ git config --global user.email "pethe.shriraj@gmail.com"
+theia@theia-petheshriraj:/home/project$ git config --global user.name "Shriraj Pethe"
+theia@theia-petheshriraj:/home/project$ git add --a
+
+theia@theia-petheshriraj:/home/project$ git commit -m "initial commit"
+[master (root-commit) b2b1b94] initial commit
+ 2 files changed, 18 insertions(+)
+ create mode 100644 .theia/settings.json
+ create mode 100644 sample_folder.html
+theia@theia-petheshriraj:/home/project$ git remote add origin2 https://github.com/ShrirajPethe/IBM-JS-project-01
+theia@theia-petheshriraj:/home/project$ git push origin2
+Username for 'https://github.com': ShrirajPethe
+Password for 'https://ShrirajPethe@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 583 bytes | 583.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ShrirajPethe/IBM-JS-project-01
+ * [new branch]      master -> master
+theia@theia-petheshriraj:/home/project$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+theia@theia-petheshriraj:/home/project$ git add --a
+theia@theia-petheshriraj:/home/project$ git commit -m "refereshed commit"
+[master 2682fe2] refereshed commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+theia@theia-petheshriraj:/home/project$ git push 
+.git/               .theia/             SampleFolder/       sample_folder.html  
+theia@theia-petheshriraj:/home/project$ git push 
+.git/               .theia/             SampleFolder/       sample_folder.html  
+theia@theia-petheshriraj:/home/project$ git push origin2
+Username for 'https://github.com': ShrirajPethe
+Password for 'https://ShrirajPethe@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 316 bytes | 316.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ShrirajPethe/IBM-JS-project-01
+   b2b1b94..2682fe2  master -> master
+theia@theia-petheshriraj:/home/project$ git add -A 
+git commit -m "Updated files"
+git push origin2
+^C
+theia@theia-petheshriraj:/home/project$ 
+git add --a
+git commit -m "Updated files"
+git push origin2
+On branch master
+nothing to commit, working tree clean
+Username for 'https://github.com': ShrirajPethe
+Password for 'https://ShrirajPethe@github.com': 
+Everything up-to-date
+theia@theia-petheshriraj:/home/project$ nothing to commit, working tree clean^C
+theia@theia-petheshriraj:/home/project$ ^C
+theia@theia-petheshriraj:/home/project$ 
